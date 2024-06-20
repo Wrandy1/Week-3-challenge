@@ -3,6 +3,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 let employee = {};
 let employeeList = [];
 let addAnother = true;
+
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
@@ -44,6 +45,8 @@ console. log(average);
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  randomEmployee = employeesArray[Math.floor(employeesArray.length * Math.random())];
+  console.log(randomEmployee,'this weeks winner')
 
 }
 
